@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"assign\stm32f1xx_hal.o"
+"assign\stm32f1xx_hal_dma.o"
+"assign\stm32f1xx_hal_flash_ex.o"
+"assign\stm32f1xx_hal_gpio.o"
+"assign\stm32f1xx_hal_uart.o"
+"assign\stm32f1xx_hal_rcc_ex.o"
+"assign\stm32f1xx_hal_gpio_ex.o"
+"assign\stm32f1xx_hal_tim.o"
+"assign\stm32f1xx_hal_pwr.o"
+"assign\stm32f1xx_hal_rcc.o"
+"assign\stm32f1xx_hal_cortex.o"
+"assign\stm32f1xx_hal_tim_ex.o"
+"assign\stm32f1xx_hal_flash.o"
+"assign\stm32f1xx_hal_adc_ex.o"
+"assign\stm32f1xx_hal_spi.o"
+"assign\stm32f1xx_hal_adc.o"
+"assign\stm32f1xx_hal_spi_ex.o"
+"assign\main.o"
+"assign\stm32f1xx_hal_msp.o"
+"assign\stm32f1xx_it.o"
+"assign\system_stm32f1xx.o"
+"assign\startup_stm32f107xc.o"
+"assign\et_stm32f_arm_kit_lcd.o"
+--library_type=microlib --strict --scatter "Assign\Assign.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Assign.map" -o Assign\Assign.axf
